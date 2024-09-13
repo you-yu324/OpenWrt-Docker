@@ -127,7 +127,7 @@ jobs:
           platforms: ${{ env.DOCKER_IMAGE_ARCH }}
           file: Dockerfile
           context: .
-          push: true
+          push: false
           tags: |
             ${{ secrets.DOCKERHUB_USERNAME }}/openwrt:latest
             ${{ secrets.DOCKERHUB_USERNAME }}/openwrt:${{ env.DEVICE_PLATFORM }}
